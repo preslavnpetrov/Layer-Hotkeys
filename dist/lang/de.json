@@ -1,5 +1,5 @@
 {
-  "LAYER-HOTKEYS.ControlsHint": "Hotkey zum aktivieren von ",
-  "LAYER-HOTKEYS.ToolsHint": "Hotkey zum aktivieren von ",
-  "LAYER-HOTKEYS.ToolName": "Werkzeug"
+  "LAYERHOTKEYS.CONTROLHINT": "Hotkey zum aktivieren von {name}",
+  "LAYERHOTKEYS.TOOLHINT": "Hotkey zum aktivieren von Werkzeug {name}",
+  "LAYERHOTKEYS.TOOLNAME": "Werkzeug {name}"
 }

@@ -112,7 +112,7 @@ function buildWatch() {
 		{ ignoreInitial: false },
 		copyFiles
 	);
-	gulp.watch('src/scripts/**/*.js', buildWebpack);
+	gulp.watch('src/scripts/**/*.ts', buildWebpack);
 }
 
 

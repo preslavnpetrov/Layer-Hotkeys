@@ -5,10 +5,22 @@ const webpack = require('webpack');
 module.exports = {
   name: 'layer-hotkeys',
   entry: {
-    index: path.resolve(__dirname, 'src/scripts/index.js')
+    index: path.resolve(__dirname, 'src/scripts/index.ts')
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   output: {
     publicPath: 'modules/layer-hotkeys/scripts/',
     filename: 'index.js',
