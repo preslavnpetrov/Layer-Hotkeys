@@ -2,7 +2,7 @@
 	"name": "layer-hotkeys",
 	"title": "Layer Hotkeys",
 	"description": "Adds customizable hotkeys for switching between layers and tools.",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"minimumCoreVersion": "9",
 	"compatibleCoreVersion": "9",
 	"author": "Preslav Petrov",
@@ -21,5 +21,5 @@
 	],
 	"url": "https://github.com/preslavnpetrov/Layer-Hotkeys",
 	"manifest": "https://raw.githubusercontent.com/preslavnpetrov/Layer-Hotkeys/master/src/module.json",
-	"download": "https://github.com/preslavnpetrov/Layer-Hotkeys/releases/download/v2.0.0/layer-hotkeys.zip"
+	"download": "https://github.com/preslavnpetrov/Layer-Hotkeys/releases/download/v2.0.1/layer-hotkeys.zip"
 }

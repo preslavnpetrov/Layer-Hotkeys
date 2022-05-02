@@ -139,12 +139,16 @@ export function init() {
   });
 
   Hooks.on("renderSceneControls", (app: Application, html: JQuery, data: object) => {
-    let scene_controls = html.find("ol.main-controls li.scene-control");
+    let sceneControls = html.find("ol.main-controls li.scene-control");
     let toolGroups = html.find("ol.sub-controls");
 
-    for (let i = 0; i < scene_controls.length; i++) {
-      const li = scene_controls[i];
-      let keybindings = game.keybindings.get("layer-hotkeys", `layer-control-${i}`);
+    for (let i = 0; i < sceneControls.length; i++) {
+      const li = sceneControls[i];
+
+      const controlName = li.dataset['control'];
+      const controlIndex = ui.controls.controls.findIndex(control => control.name === controlName);
+
+      let keybindings = game.keybindings.get("layer-hotkeys", `layer-control-${controlIndex}`);
 
       if (keybindings.length) {
         li.title = appendKeybindings(li.title, keybindings);
